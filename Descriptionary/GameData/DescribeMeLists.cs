@@ -59,7 +59,59 @@ namespace Descriptionary.GameData
                 "Zesty"
         };
 
-        readonly string[] blueList = { "Wobbly", "Spikey", "Childish", "Lazy", "Wet", "Invisible"};
+        readonly string[] blueList =
+        {
+            "Adorable",
+            "Artistic",
+            "Beautiful",
+            "Blingy",
+            "Bold",
+            "Childish",
+            "Colourful",
+            "Competitive",
+            "Confident",
+            "Cowardly",
+            "Cranky",
+            "Crazy",
+            "Creepy",
+            "Crinkly",
+            "Dry",
+            "Dusty",
+            "Energetic",
+            "Fancy",
+            "Fluffy",
+            "Fresh",
+            "Frozen",
+            "Greedy",
+            "Intelligent",
+            "Invisible",
+            "Itchy",
+            "Juicy",
+            "Lazy",
+            "Melting",
+            "Messy",
+            "Mischievous",
+            "Prickly",
+            "Puffy",
+            "Rebellious",
+            "Rude",
+            "Sassy",
+            "Scary",
+            "Shiny",
+            "Slimy",
+            "Slippery",
+            "Smelly",
+            "Soft",
+            "Soggy",
+            "Sparkling",
+            "Spikey",
+            "Suspicious",
+            "Sweet",
+            "Tacky",
+            "Wacky",
+            "Wet",
+            "Wobbly"
+        };
 
         public string GetRandomBlueWord()
         {
