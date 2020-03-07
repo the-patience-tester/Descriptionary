@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Descriptionary.DescribeMePage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding BlueWord}" AutomationId="BlueWord" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"/>
+            <Label Text="DescribeMePage" AutomationId="YellowWord" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Label Text="{Binding YellowWord}" AutomationId="YellowWord" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
