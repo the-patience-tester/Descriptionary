@@ -115,20 +115,12 @@ namespace Descriptionary.GameData
 
         public string GetRandomBlueWord()
         {
-            return GetRandomWordFormArray(blueList);
+            return blueList.GetRandomString();
         }
 
         public string GetRandomYellowWord()
         {
-            return GetRandomWordFormArray(yellowList);
-        }
-
-        string GetRandomWordFormArray(string[] array)
-        {
-            var r = new Random();
-            var rli = r.Next(0, array.Length);
-
-            return array[rli];
+            return yellowList.GetRandomString();
         }
     }
 }

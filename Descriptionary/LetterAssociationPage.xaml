@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Descriptionary.LetterAssociationPage">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding GameLetter}"
+                   AutomationId="GameLetter"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding GameWords.Place}"
+                   AutomationId="PlaceGameWord"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding GameWords.Animal}"
+                   AutomationId="AnimalGameWord"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding GameWords.Name}"
+                   AutomationId="NameGameWord"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding GameWords.MusicType}"
+                   AutomationId="MusicGameWord"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding GameWords.FoodType}"
+                   AutomationId="FoodGameWord"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding GameWords.EntertainmentType}"
+                   AutomationId="EntertainmentGameWord"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding GameWords.BonusType}"
+                   AutomationId="BonusGameWord"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
