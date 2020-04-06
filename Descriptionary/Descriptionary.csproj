@@ -18,4 +18,9 @@
     <Folder Include="GameData\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="LetterAssociation.xaml.cs">
+      <DependentUpon>LetterAssociationPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

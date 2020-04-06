@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 using Xamarin.Forms;
 
@@ -17,6 +16,14 @@ namespace Descriptionary
             await Navigation.PushAsync(new DescribeMePage
             {
                 BindingContext = new ViewModels.DescribeMe()
+            });
+        }
+
+        async void OnLetterAssociationClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LetterAssociationPage()
+            {
+                BindingContext = new ViewModels.LetterAsociation()
             });
         }
     }
