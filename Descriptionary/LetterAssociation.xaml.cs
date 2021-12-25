@@ -1,3 +1,4 @@
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,6 +10,12 @@ namespace Descriptionary
         public LetterAssociationPage()
         {
             InitializeComponent();
+        }
+
+
+        void OnRefreshClicked(object sender, EventArgs e)
+        {
+            BindingContext = new ViewModels.LetterAssociation();
         }
     }
 }

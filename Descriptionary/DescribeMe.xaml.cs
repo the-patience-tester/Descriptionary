@@ -15,5 +15,10 @@ namespace Descriptionary
         {
             base.OnAppearing();
         }
+
+        void OnRefreshClicked(object sender, EventArgs e)
+        {
+            BindingContext = new ViewModels.DescribeMe();
+        }
     }
 }

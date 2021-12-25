@@ -6,9 +6,9 @@ using Descriptionary.GameData;
 
 namespace Descriptionary.ViewModels
 {
-    public class LetterAsociation : INotifyPropertyChanged
+    public class LetterAssociation : INotifyPropertyChanged
     {
-        public LetterAsociation()
+        public LetterAssociation()
         {
             var gd = new GameData.LetterAsociation();
             GameLetter = gd.GetGameLetter();
@@ -21,7 +21,9 @@ namespace Descriptionary.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        protected virtual void OnPropertyChanged(
+            [CallerMemberName]
+            string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

@@ -6,38 +6,53 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding GameLetter}"
-                   AutomationId="GameLetter"
-                   VerticalOptions="StartAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-            <Label Text="{Binding GameWords.Place}"
-                   AutomationId="PlaceGameWord"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="CenterAndExpand"/>
-            <Label Text="{Binding GameWords.Animal}"
-                   AutomationId="AnimalGameWord"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="CenterAndExpand"/>
-            <Label Text="{Binding GameWords.Name}"
-                   AutomationId="NameGameWord"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="CenterAndExpand"/>
-            <Label Text="{Binding GameWords.MusicType}"
-                   AutomationId="MusicGameWord"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="CenterAndExpand"/>
-            <Label Text="{Binding GameWords.FoodType}"
-                   AutomationId="FoodGameWord"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="CenterAndExpand"/>
-            <Label Text="{Binding GameWords.EntertainmentType}"
-                   AutomationId="EntertainmentGameWord"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="CenterAndExpand"/>
-            <Label Text="{Binding GameWords.BonusType}"
-                   AutomationId="BonusGameWord"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding GameLetter}"
+                AutomationId="GameLetter"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+            <Button
+                Text="Refresh"
+                x:Name="RefreshButton"
+                Clicked="OnRefreshClicked"
+                AutomationId="Refresh"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding GameWords.Place}"
+                AutomationId="PlaceGameWord"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding GameWords.Animal}"
+                AutomationId="AnimalGameWord"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding GameWords.Name}"
+                AutomationId="NameGameWord"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding GameWords.MusicType}"
+                AutomationId="MusicGameWord"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding GameWords.FoodType}"
+                AutomationId="FoodGameWord"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding GameWords.EntertainmentType}"
+                AutomationId="EntertainmentGameWord"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding GameWords.BonusType}"
+                AutomationId="BonusGameWord"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -23,7 +23,7 @@ namespace Descriptionary
         {
             await Navigation.PushAsync(new LetterAssociationPage()
             {
-                BindingContext = new ViewModels.LetterAsociation()
+                BindingContext = new ViewModels.LetterAssociation()
             });
         }
     }

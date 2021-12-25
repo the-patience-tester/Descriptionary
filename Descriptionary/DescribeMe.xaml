@@ -6,8 +6,23 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding BlueWord}" AutomationId="BlueWord" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"/>
-            <Label Text="{Binding YellowWord}" AutomationId="YellowWord" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand"/>
+            <Label 
+                Text="{Binding BlueWord}"
+                AutomationId="BlueWord"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"/>
+            <Button
+                Text="Refresh"
+                x:Name="RefreshButton"
+                Clicked="OnRefreshClicked"
+                AutomationId="Refresh"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+            <Label
+                Text="{Binding YellowWord}" 
+                AutomationId="YellowWord"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
